@@ -18,7 +18,7 @@
   <header>
     <h1>Margarida Melo</h1>
     <p>systems engineering student</p>
-    <a class="button" href="mailto:mmarg.melo@gmail.com" target="_blank">Contact me</a>
+    <a class="button" href="mailto:mmarg.melo@gmail.com" target="_blank">Email me</a>
     <ul class="icons">
       <li><a href="https://linkedin.com/in/mmarg.melo" target="_blank"><i class="fab fa-linkedin"></i></a></li>
       <li><a href="https://github.com/1181092/" target="_blank"><i class="fab fa-github-square"></i></a></li>
@@ -27,10 +27,29 @@
     </ul>
   </header>
 
+  <div id=about>
+    <h2>About me</h2>
+    <div class="two-grid">
+      <div>
+        <img class="profile" src="images/profile.jpg" alt="picture of me">
+      </div>
+      <div>
+        <p>
+          From Setúbal (Portugal), there is nothing that I appreciate more than a great challenge. </p>
+        <p>Conversational by nature and always outgoing, I don't know how to stay quiet or what to do with too much free
+          time.</p>
+        <p>Currently in a love-hate relationship with programming in general, but always wanting to learn new
+          languages. Still looking to find the perfect IDE.</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Cards section -->
-  <div class="projects">
+  <div id="projects">
     <h2>Some of my projects</h2>
-    <div class="grid">
+    <div class="four-grid">
+
+      <!--First Project-->
       <div class="card">
         <img
           src="https://images.unsplash.com/photo-1591538519435-4578c3ba26d6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
@@ -41,9 +60,9 @@
         <br>
         <p class="git"><a href="https://github.com/1181092/APROG-not-just-cakes" target="_blank"> View repository
             <i class="fas fa-code-branch"></i></a></p>
-
       </div>
 
+      <!--Second Project-->
       <div class="card">
         <img
           src="https://images.unsplash.com/photo-1581360742512-021d5b2157d8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
@@ -61,12 +80,12 @@
           <li>dinning services,</li>
         </ul>
         <p>among others. </p>
-        <div class="bottom">
-          <p class="git"><a href="https://github.com/1181092/MOPRO-hospital-management" target="_blank">View
-              repository <i class="fas fa-code-branch"></i></a></p>
-        </div>
+        <br>
+        <p class="git"><a href="https://github.com/1181092/MOPRO-hospital-management" target="_blank">View
+            repository <i class="fas fa-code-branch"></i></a></p>
       </div>
 
+      <!--Third Project-->
       <div class="card">
         <img
           src="https://images.unsplash.com/photo-1623111396948-5706bc25703e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
@@ -78,15 +97,41 @@
           level.</p>
         <br>
         <p class="git"><a href="https://github.com/1181092/APROG-not-just-cakes" target="_blank">View
-            repository<i class="fas fa-code-branch"></i></a></p>
+            repository <i class="fas fa-code-branch"></i></a></p>
       </div>
     </div>
   </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Back to top">Back to top ⬆</button>
 
   <!-- Footer section -->
   <footer>
     <p>Made with 🌼 by Margarida Melo</p>
   </footer>
+
+  <!-- Button's javascript-->
+  <script>
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <!--End of JavaScript-->
 
 </body>
 

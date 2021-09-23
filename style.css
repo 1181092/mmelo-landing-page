@@ -23,55 +23,34 @@ header {
   text-align: center;
   color: white;
 }
-
-.button {
-  padding: 10px;
-  color: #1a48e3;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s;
-  background-color: lightcyan;
-  border-radius: 4px;
-}
-
-.button:hover {
-  color: #ce2fae;
-  background-color: lightyellow;
-}
-
-.icons {
-  list-style: none;
-  padding: 0;
-  margin-top: 25px;
-}
-
-.icons li {
-  display: inline;
-}
-
-.icons a {
-  color: white;
-  padding: 5px;
-  text-decoration: none;
-  font-size: 25px;
-  text-shadow: 1px 1px 1px black;
-  transition: 0.3s;
-}
-
-.icons a:hover {
-  color: lightcyan;
-}
-
-.projects {
+#about {
   align-content: center;
   max-width: 900px;
   margin: 60px auto;
 }
 
-.grid {
+#projects {
+  align-content: center;
+  max-width: 900px;
+  margin: 60px auto;
+}
+
+.two-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  text-align: justify;
+}
+
+.four-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+}
+.profile {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
 }
 
 .card {
@@ -119,16 +98,9 @@ header {
   padding: 10px;
   color: #1a48e3;
   font-weight: bold;
-  text-decoration: none;
   transition: 0.3s;
   background-color: lightcyan;
   border-radius: 4px;
-}
-
-div.bottom {
-  align-content: center;
-  position: absolute;
-  bottom: 24px;
 }
 
 .git a:hover {
@@ -162,4 +134,64 @@ footer {
   color: white;
   background-color: #404042;
   padding: 100px;
+}
+/* Buttons and icons*/
+
+.button {
+  padding: 10px;
+  color: #1a48e3;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  background-color: lightcyan;
+  border-radius: 4px;
+}
+
+.button:hover {
+  color: #ce2fae;
+  background-color: lightyellow;
+}
+
+.icons {
+  list-style: none;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.icons li {
+  display: inline;
+}
+
+.icons a {
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  text-shadow: 1px 1px 1px black;
+  transition: 0.3s;
+}
+
+.icons a:hover {
+  color: lightcyan;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  border: none;
+  outline: none;
+  background-color: lightcyan;
+  color: #1a48e3;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  font-weight: bolder;
+  transition: 0.3s;
+}
+
+#myBtn:hover {
+  color: #ce2fae;
+  background-color: lightyellow;
 }
